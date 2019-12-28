@@ -4,9 +4,7 @@ import Badge from 'react-bootstrap/Badge'
 const JiraNotResolvedCell = ({ request }) => {
   return (
     <td>
-      <Badge variant="danger">
-        Jira not resolved
-      </Badge>
+      <Badge variant="danger">Jira not resolved</Badge>
     </td>
   )
 }

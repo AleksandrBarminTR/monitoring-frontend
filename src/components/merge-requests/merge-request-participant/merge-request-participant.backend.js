@@ -1,9 +1,14 @@
-const createDummyRequest = (statutes) => {
+const createDummyRequest = statutes => {
   return {
     ghLink: 'https://github.com/aabarmin/common-examples/pulls',
     ghStatus: randomValue('open', 'closed'),
     jiraResolved: randomValue(true, false),
-    jiraStatus: randomValue('open', 'in_progress', 'code_review', 'code_reviewed'),
+    jiraStatus: randomValue(
+      'open',
+      'in_progress',
+      'code_review',
+      'code_reviewed'
+    ),
     jiraLink: 'https://jira.thomsonreuters.com/UKBL-100500',
     buildResolved: randomValue(true, false),
     buildStatus: randomValue('not_started', 'in_progress', 'success', 'failed')

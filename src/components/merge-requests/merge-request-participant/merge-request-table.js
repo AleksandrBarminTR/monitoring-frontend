@@ -25,23 +25,13 @@ export default class MergeRequestTable extends Component {
         <thead>
           <tr>
             <th>&nbsp;</th>
-            <th>
-              GitHub Link
-            </th>
-            <th>
-              Jira Link
-            </th>
-            <th>
-              Jira Status
-            </th>
-            <th>
-              Build Link
-            </th>
+            <th>GitHub Link</th>
+            <th>Jira Link</th>
+            <th>Jira Status</th>
+            <th>Build Link</th>
           </tr>
         </thead>
-        <tbody>
-          {rows}
-        </tbody>
+        <tbody>{rows}</tbody>
       </Table>
     )
   }

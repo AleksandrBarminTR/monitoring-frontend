@@ -1,5 +1,5 @@
 import React from 'react'
-import JiraNotResolvedCell from './jira-not-resolved-cell';
+import JiraNotResolvedCell from './jira-not-resolved-cell'
 
 const JiraLinkCell = ({ request }) => {
   if (request.jiraResolved === false) {

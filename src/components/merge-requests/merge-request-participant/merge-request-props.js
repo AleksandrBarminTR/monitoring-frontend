@@ -3,9 +3,9 @@ import Form from 'react-bootstrap/Form'
 
 export default class MergeRequestProps extends Component {
   constructor() {
-    super();
+    super()
 
-    this.changeProperty = this.changeProperty.bind(this);
+    this.changeProperty = this.changeProperty.bind(this)
     this.allProps = [
       {
         name: 'Opened',
@@ -29,23 +29,23 @@ export default class MergeRequestProps extends Component {
   }
 
   getValue(propName) {
-    return this.props.properties[propName] === true;
+    return this.props.properties[propName] === true
   }
 
   render() {
     const content = this.allProps.map(item => {
-      return <Form.Check inline 
-          label={item.name} 
-          key={item.prop} 
-          type="checkbox" 
+      return (
+        <Form.Check
+          inline
+          label={item.name}
+          key={item.prop}
+          type="checkbox"
           onChange={this.changeProperty.bind(this, item.prop)}
-          checked={this.getValue(item.prop)} />
-    });
+          checked={this.getValue(item.prop)}
+        />
+      )
+    })
 
-    return (
-      <Form>
-        {content}
-      </Form>
-    )
+    return <Form>{content}</Form>
   }
 }

@@ -1,7 +1,7 @@
 const createDummyParticipant = (name, login) => {
   return {
-    id: login, 
-    name: name, 
+    id: login,
+    name: name,
     login: login
   }
 }
@@ -12,8 +12,8 @@ export const loadParticipantsList = () => {
       const data = [
         createDummyParticipant('Aleksandr Barmin', 'AleksandrBarminTR'),
         createDummyParticipant('Vasilii Emashov', 'VasiliiEmashovTR')
-      ];
-      resolve(data);
-    }, 100);
-  });
+      ]
+      resolve(data)
+    }, 100)
+  })
 }

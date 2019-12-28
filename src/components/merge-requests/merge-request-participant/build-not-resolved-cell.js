@@ -4,9 +4,7 @@ import Badge from 'react-bootstrap/Badge'
 const BuildNotResolvedCell = ({ request }) => {
   return (
     <td>
-      <Badge variant="danger">
-        Build not resolved
-      </Badge>
+      <Badge variant="danger">Build not resolved</Badge>
     </td>
   )
 }

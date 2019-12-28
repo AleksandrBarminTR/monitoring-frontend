@@ -6,11 +6,7 @@ const JiraStatusCell = ({ request }) => {
     return <JiraNotResolvedCell />
   }
 
-  return (
-    <td>
-      {request.jiraStatus}
-    </td>
-  )
+  return <td>{request.jiraStatus}</td>
 }
 
 export default JiraStatusCell
