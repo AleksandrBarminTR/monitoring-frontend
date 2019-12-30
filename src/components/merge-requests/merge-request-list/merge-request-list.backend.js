@@ -1,19 +1,9 @@
-const createDummyParticipant = (name, login) => {
-  return {
-    id: login,
-    name: name,
-    login: login
-  }
-}
+import axios from 'axios'
 
 export const loadParticipantsList = () => {
   return new Promise(resolve => {
-    setTimeout(() => {
-      const data = [
-        createDummyParticipant('Aleksandr Barmin', 'AleksandrBarminTR'),
-        createDummyParticipant('Vasilii Emashov', 'VasiliiEmashovTR')
-      ]
-      resolve(data)
-    }, 100)
+    axios.get('/participants').then(response => {
+      resolve(response.data)
+    })
   })
 }

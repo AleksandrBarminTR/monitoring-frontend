@@ -41,7 +41,7 @@ export default class MergeRequestParticipant extends Component {
         return state
       },
       () => {
-        loadMergeRequestsList(this.props.participant.id, this.state.props).then(
+        loadMergeRequestsList(this.props.participant.login, this.state.props).then(
           requests => {
             this.setState(state => {
               state.loading = false

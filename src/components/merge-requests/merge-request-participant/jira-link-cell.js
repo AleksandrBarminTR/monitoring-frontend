@@ -9,7 +9,7 @@ const JiraLinkCell = ({ request }) => {
   return (
     <td>
       <a href={request.jiraLink} target="_blank" rel="noopener noreferrer">
-        {request.jiraLink}
+        {request.jiraTitle}
       </a>
     </td>
   )

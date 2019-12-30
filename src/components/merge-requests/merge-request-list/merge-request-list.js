@@ -42,7 +42,7 @@ export default class MergeRequestList extends Component {
     const participants = this.state.participants.map(participant => {
       return (
         <MergeRequestParticipant
-          key={participant.id}
+          key={participant.login}
           participant={participant}
         />
       )

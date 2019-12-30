@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 
 const GitHubStatusCell = ({ request }) => {
   const content =
-    request.ghStatus === 'open' ? (
+    request.githubStatus === 'OPEN' ? (
       <Button variant="success" size="sm">
         Open
       </Button>
