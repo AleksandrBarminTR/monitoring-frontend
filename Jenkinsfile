@@ -9,7 +9,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'docker run -v $WORKSPACE:/app node-builder npm install'
-                sh 'docker run -v $WORKSPACE:/app node-builder npm run test'
             }
         }
         stage('dockerize') {
