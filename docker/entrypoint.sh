@@ -9,6 +9,4 @@ OPTIONALS=
 
 cd /opt/app
 
-DANGEROUSLY_DISABLE_HOST_CHECK=true
-
 npm start
